@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.ppamorim.dragger.DraggerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dragger_layout="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dragger_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    dragger_layout:drag_view_id="@+id/drag_view"
+    dragger_layout:shadow_view_id="@+id/shadow_view"
+    >
+
+    <FrameLayout
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BF000000"/>
+
+
+    <RelativeLayout
+        android:id="@+id/drag_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EAEAEA"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/background_color"
+            android:id="@+id/root"
+            >
+
+            <com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_above="@+id/addtion_btn"
+                android:paddingTop="?attr/actionBarSize"
+                android:clipToPadding="false"
+                android:id="@+id/rv"
+                >
+            </com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/message_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/please_enter_search_contents"
+            android:textColor="@color/dark_gray"
+            />
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            app:contentInsetStart="0dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/toolbar_title"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Course Title"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--/>-->
+
+
+                <!--<View-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@color/guillotine_background_dark"-->
+                    <!--/>-->
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </RelativeLayout>
+
+</com.github.ppamorim.dragger.DraggerView>

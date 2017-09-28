@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.ppamorim.dragger.DraggerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dragger_layout="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dragger_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    dragger_layout:drag_view_id="@+id/drag_view"
+    dragger_layout:shadow_view_id="@+id/shadow_view"
+    >
+
+    <FrameLayout
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BF000000"/>
+
+
+    <RelativeLayout
+        android:id="@+id/drag_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EAEAEA"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/dark_background_color"
+            android:paddingTop="?attr/actionBarSize"
+            android:clipToPadding="false"
+            >
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/addtion_btn">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:clipChildren="true"
+                    android:clipToPadding="false"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/rv"
+                    >
+                </android.support.v7.widget.RecyclerView>
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/addtion_btn"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/darkPrimary"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/message_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/no_save_course_attraction_yet"
+            android:textColor="@color/white"
+            />
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            app:contentInsetStart="0dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/dark_tab_bar_color"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Title"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/show_map_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_map_white_24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    />
+
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color"
+                    />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </RelativeLayout>
+
+</com.github.ppamorim.dragger.DraggerView>

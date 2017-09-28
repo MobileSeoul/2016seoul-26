@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:id="@+id/main_activity_root"
+    android:paddingTop="?attr/actionBarSize"
+    android:clipToPadding="false"
+    >
+
+    <FrameLayout
+        android:id="@+id/fm_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:background="@color/background_color"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/rv"
+            android:paddingLeft="10dp"
+            android:overScrollMode="never"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/non_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/no_favorite"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:fab="http://schemas.android.com/apk/res-auto"
+            >
+
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/show_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                fab:fab_size="mini"
+                fab:fab_icon="@drawable/ic_map_grey600_18dp"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/white_pressed"/>
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        def versionPropsFile = file('version.properties') // version.properties 파일에서 버전 정보를 관리합니다
+        if (versionPropsFile.canRead()) {
+            def Properties versionProps = new Properties()
+            versionProps.load(new FileInputStream(versionPropsFile))
+            def code = versionProps['VERSION_CODE'].toInteger() + 1 // Gradle이 실행될 때 버전 코드 증가
+            versionProps['VERSION_CODE'] = code.toString()
+            versionProps.store(versionPropsFile.newWriter(), null)
+            defaultConfig {
+                applicationId "tk.twpooi.seoultrip"
+                minSdkVersion 16
+                targetSdkVersion 23
+                versionCode code // 위에서 구한 코드를 버전 코드로 설정합니다
+                versionName "1.0.0"// + code
+            }
+        } else {
+            throw new GradleException("Could not read version.properties!") // version.properties를 읽어올 수 없을 때
+        }
+//        applicationId "tk.twpooi.seoultrip"
+//        minSdkVersion 16
+//        targetSdkVersion 23
+//        versionCode 1
+//        versionName "0.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    // AttractionListFragment
+    compile 'com.android.support:cardview-v7:23.0.0'
+    compile 'com.android.support:recyclerview-v7:23.0.0'
+    compile 'com.android.support:support-v4:23.+'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.sackcentury:shinebutton:0.1.5'
+    compile 'com.flyco.dialog:FlycoDialog_Lib:1.3.2@aar'
+    // Detail Attraction
+    compile 'com.github.ksoichiro:android-observablescrollview:1.6.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    // Favorite List
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+    // My Course List
+    compile 'com.github.ppamorim:dragger:1.2'
+    // MainTabActivity
+    // GuillotineMenu
+    compile files('libs/GuillotineMenu.jar')
+    // Tab bar
+    compile 'com.github.devlight.navigationtabbar:navigationtabbar:1.2.3'
+    // 알림창
+    compile 'cn.pedant.sweetalert:library:1.3'
+    // floating button
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    // edit text
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    // circle crop image
+    compile 'jp.wasabeef:picasso-transformations:2.1.0'
+    // dotindicator
+    compile 'com.matthew-tamlin:sliding-intro-screen:3.1.0'
+    // loding indicator
+    compile 'com.wang.avi:library:2.1.2'
+    // seek bar
+    compile 'org.adw.library:discrete-seekbar:1.0.1'
+    // Daum map
+    compile files('libs/libDaumMapAndroid.jar')
+    // Progressbar
+    compile 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+    // Drag & Drop RecycleView
+    compile ('com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:0.9.3@aar'){
+        transitive=true
+    }
+    // image pinch zoom
+    compile 'com.github.chrisbanes:PhotoView:1.3.0'
+    // Facebook
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    // start login
+    compile 'com.flaviofaria:kenburnsview:1.0.7'
+}

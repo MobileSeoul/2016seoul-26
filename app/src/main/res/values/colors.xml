@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 353238 --><!-- a7662c --><!-- d76010 -->
+    <color name="colorPrimary">@color/red_btn_bg_pressed_color</color>
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+    <color name="darkPrimary">#16181f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background_color">#f6f6f6</color>
+    <color name="dark_background_color">#22242a</color>
+    <color name="list_background_color">#d8d8d8</color>
+    <color name="line_color">#16181f</color>
+    <color name="dark_tab_bar_color">#22242a</color>
+    <color name="dark_status_bar_color">#22242a</color>
+
+    <!-- Addition color -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="dark_gray">#484848</color>
+    <color name="deep_dark_gray">#323232</color>
+    <color name="light_gray">#dcdcdc</color>
+    <color name="light_gray2">#f6f6f6</color>
+    <color name="half_transparent">#99000000</color>
+    <color name="transparent">#CD000000</color>
+    <color name="linecolor">#bebebe</color>
+    <color name="transparency">#00000000</color>
+    <color name="snackbar_color">@color/black</color>
+
+    <!-- Guillotine Menu Color -->
+    <color name="guillotine_background">#353238</color>
+    <color name="guillotine_background_dark">#2c292f</color>
+    <!--=======================-->
+
+    <!-- Floating Action Button -->
+    <color name="half_black">#808080</color>
+    <color name="pink">#FF4081</color>
+    <color name="pink_pressed">#ec407a</color>
+    <!-- white -->
+    <color name="white_pressed">#f1f1f1</color>
+    <!--========================-->
+
+    <!-- init page -->
+    <color name="init_background">#f6f6f6</color>
+    <color name="init_title">#ff7900</color>
+    <color name="init_contents">#636363</color>
+
+    <!-- ptr -->
+    <color name="red">#FFC93437</color>
+    <color name="blue">#FF375BF1</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#FF34A350</color>
+    <!--========================-->
+
+    <color name="namsanGreen">#455f54</color>
+    <color name="darkNamsanGreen">#3c564b</color>
+    <color name="monoRed">#941e34</color>
+
+    <color name="facebook_darkblue">#0e1f56</color>
+    <color name="facebook_blue">#3b5998</color>
+    <color name="kakao_yellow">#ffeb00</color>
+    <color name="kakao_text">#3c1e1e</color>
+</resources>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.ppamorim.dragger.DraggerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dragger_layout="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dragger_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    dragger_layout:drag_view_id="@+id/drag_view"
+    dragger_layout:shadow_view_id="@+id/shadow_view"
+    >
+
+    <FrameLayout
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BF000000"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/drag_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EAEAEA"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/dark_background_color"
+                android:paddingTop="?attr/actionBarSize"
+                android:clipToPadding="false"
+                >
+
+                <tk.twpooi.seoultrip.CustomViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/rl_dot_indicator"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingBottom="3dp"
+                    >
+
+
+
+                </tk.twpooi.seoultrip.CustomViewPager>
+
+                <RelativeLayout
+                    android:id="@+id/rl_dot_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/li_remain_time"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    >
+
+
+                    <com.matthewtamlin.sliding_intro_screen_library.indicators.DotIndicator
+                        android:id="@+id/main_indicator_ad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/li_remain_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/li_button"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/remain_time"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/light_gray"
+                    />
+
+                    <com.akexorcist.roundcornerprogressbar.TextRoundCornerProgressBar
+                        xmlns:prg="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/progress"
+                        android:layout_height="40dp"
+                        android:layout_width="320dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        prg:rcBackgroundPadding="5dp"
+                        prg:rcProgressColor="@color/monoRed"
+                        prg:rcBackgroundColor="@color/darkPrimary"
+                        prg:rcTextProgressColor="@color/white"
+                        prg:rcTextProgressSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/progress_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="진행상황"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/light_gray"
+                        />
+
+
+                </LinearLayout>
+
+                <!-- 여기 작성 -->
+
+                <LinearLayout
+                    android:id="@+id/li_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/share_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@color/facebook_blue"
+                        android:text="@string/share_result"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        android:textAllCaps="false"
+                        />
+
+                    <Button
+                        android:id="@+id/check_location_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:background="@color/namsanGreen"
+                        android:text="@string/check_location"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/main_toolbar"
+                    app:contentInsetStart="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:minHeight="?attr/actionBarSize"
+                    android:background="@color/dark_tab_bar_color"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize">
+
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/toolbar_title"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Course Title"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:gravity="center"-->
+                            <!--android:textColor="@color/white"-->
+                            <!--android:textSize="20sp"-->
+                            <!--android:layout_centerInParent="true"-->
+                            <!--/>-->
+
+
+
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.Toolbar>
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Title"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_centerInParent="true"
+                    />
+
+                <View
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color"
+                    />
+
+            </FrameLayout>
+
+
+    </RelativeLayout>
+    </FrameLayout>
+</com.github.ppamorim.dragger.DraggerView>

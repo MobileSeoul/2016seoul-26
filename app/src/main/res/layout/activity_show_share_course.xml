@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:id="@+id/root"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="320dp"
+        android:layout_height="510dp"
+        android:layout_centerInParent="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            >
+
+            <TextView
+                android:id="@+id/course_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/li_button"
+                android:text="title"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+
+            <LinearLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/li_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/show_map_btn"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <com.sackcentury.shinebuttonlib.ShineButton
+                    android:id="@+id/interest_btn"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@color/dark_gray"
+                    app:btn_color="@color/dark_gray"
+                    app:btn_fill_color="@color/white"
+                    app:allow_random_color="false"
+                    app:siShape="@raw/heart"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/add_course_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_download_white_18dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/show_map_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_map_white_18dp"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                />
+
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_below="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl"
+        android:gravity="center"
+        >
+
+
+        <com.matthewtamlin.sliding_intro_screen_library.indicators.DotIndicator
+            android:id="@+id/main_indicator_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

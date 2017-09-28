@@ -1,0 +1,294 @@
+<resources>
+    <string name="app_name">SeoulTrip</string>
+
+    <!-- 자주 사용하는 문구 -->
+    <string name="complete">OK</string>
+    <string name="create">Create</string>
+    <string name="add">Add</string>
+    <string name="add_short">Add</string>
+    <string name="share">Share</string>
+    <string name="retry">Retry</string>
+    <string name="close">Close</string>
+    <string name="select">Select</string>
+    <string name="cancel_select">Cancel</string>
+    <string name="course_information">Information</string>
+    <string name="add_to_my_course">Add to my course</string>
+    <string name="start">Start</string>
+    <string name="restart">Restart</string>
+    <string name="start_time">Start time</string>
+    <string name="finish_time">End Time</string>
+    <string name="give_up">Give up</string>
+    <string name="remove">Remove</string>
+    <string name="success">Success</string>
+    <string name="failed">Fail</string>
+    <string name="remove_list">Remove from list</string>
+    <string name="address">Address</string>
+    <string name="please_wait">Please wait.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="finish">Finish</string>
+    <string name="nim"></string>
+    <string name="search">Search</string>
+    <string name="time">Time</string>
+    <string name="arrival">Arrival</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="information">Information</string>
+    <string name="setting">Setting</string>
+    <string name="error">Error</string>
+    <string name="put">Put</string>
+    <string name="like">Like</string>
+    <string name="hit">Hit</string>
+    <string name="telephone">Telephone</string>
+    <string name="website">Website</string>
+    <string name="source">Source</string>
+    <string name="intro">Introduce</string>
+    <string name="addition_info">Additional Information</string>
+    <string name="picture">Picture</string>
+    <string name="map">Map</string>
+    <string name="warning">Warning</string>
+    <string name="course">course</string>
+    <string name="a_times">%1$d times</string>
+    <string name="a_ea">%1$d</string>
+
+    <string name="favorite">Favorite</string>
+    <string name="my_course">My Course</string>
+    <string name="shared_course">Shared Course</string>
+    <string name="success_course_game">Success Course Game</string>
+    <string name="attraction_list">Attraction List</string>
+    <string name="recommend_course">Recommend Course</string>
+    <string name="course_game">Course Game</string>
+
+    <string name="check_db">Checking the DB version.\nPlease wait.</string>
+
+    <string name="no_list">There is no list</string>
+    <string name="no_save_course">There is no saved course</string>
+    <string name="no_save_course_attraction_yet">There is no stored attractions.</string>
+    <string name="no_favorite">There is no favorite items.</string>
+    <string name="please_enter_search_contents">Please enter a query.</string>
+    <string name="show_kakao_map">View on Map</string>
+    <string name="look_similar_attraction">View similar attractions</string>
+    <string name="no_search_result">No search results.</string>
+    <string name="search_result_count">results</string>
+    <string name="no_information">There is no information.</string>
+    <string name="save_clipboard">Successfully saved to the clipboard.</string>
+
+    <string name="attraction_count">Total %1$d attractions</string>
+
+    <string name="month">.</string>
+    <string name="day">.</string>
+    <string name="hour">:</string>
+    <string name="hour2">time</string>
+    <string name="minute">:</string>
+    <string name="second"></string>
+
+    <!-- Alert -->
+    <string name="are_you_finish">Are you sure you want to quit SeoulTrip?</string>
+    <string name="are_you_remove">Are you sure you want to delete from the list?</string>
+    <string name="are_you_give_up">Do you really want to give up?</string>
+    <string name="are_you_continue">Would you like to move on to the next course?</string>
+    <string name="select_district">Please select the district you want to query.</string>
+    <string name="select_order">Please select the desired alignment.</string>
+    <string name="checking_location">Checking the location.</string>
+    <string name="fail_location_check">Check the location failed.</string>
+    <string name="check_permission">Please check the location service permission.</string>
+    <string name="fail_location_message">If not long after to enable location services, please wait.</string>
+    <string name="no_respond_server">The server is not responding.</string>
+    <string name="already_share">Already shared course.</string>
+    <string name="share_notice_message">In order to share the course, the sights must be 3 or more 10 or less.</string>
+    <string name="success_share">Successfully share.</string>
+    <string name="fail_share">Share failed.</string>
+    <string name="are_you_save_course">Do you want to save the course?</string>
+    <string name="success_save">Successfully saved.</string>
+    <string name="fail_save">Failed to save the course.</string>
+    <string name="success_add">Successfully added.</string>
+
+    <!-- fab -->
+    <string name="gotoup">Back to top</string>
+    <string name="order">Sort</string>
+    <string name="show_district">View by district</string>
+    <string name="ascending_order">Ascending</string>
+    <string name="descending_order">Descending</string>
+    <string name="my_shared_course">View my share course</string>
+    <string name="show_all_shared_course">View all share course.</string>
+    <string name="fab_remove_favorite">Delete favorites</string>
+    <string name="fab_add_favorite">Add favorites</string>
+
+    <!-- snack bar -->
+    <string name="success_login">Login successful</string>
+    <string name="cancel_login">Login cancel</string>
+    <string name="error_login">Login error</string>
+    <string name="add_favorite">Add to Favorites.</string>
+    <string name="remove_favorite">Remove to Favorites.</string>
+    <string name="save_to_my_course">Add to my own course.</string>
+
+    <!-- 코스 게임 -->
+    <string name="remain_time">Time remaining</string>
+    <string name="share_result">Share Results</string>
+    <string name="check_location">Checking Location</string>
+    <string name="pass">Pass</string>
+    <string name="no_address">No address details</string>
+    <string name="current_progress">Complete %2$d of %1$d</string>
+    <string name="fb_mention">%1$s\'s finished \"%2$s\" course . Time : %3$s, Course list : %4$s</string>
+    <string name="time_hms">%1$dh %2$dm %3$ds</string>
+    <string name="time_ms">%1$dm %2$ds</string>
+    <string name="time_s">%1$ds</string>
+    <string name="date_time">%1$s %2$s, %3$s : %4$s</string>
+    <string name="distance_to_attraction">Approximately %1$d meters of distance to attraction.</string>
+    <string name="distance_to_attraction_failed">Approximately %1$d meters of distance to attraction. You must be within %2$d meters from the attraction.</string>
+
+    <!-- 코스 게임 추가 -->
+    <string name="add_course_game">Add to course game</string>
+    <string name="add_course_game_mycourse">Add from my course</string>
+    <string name="add_course_game_shared">Add from shared Course.</string>
+    <string name="add_course_game_random">Add from random</string>
+
+
+    <!-- 나만의 코스 -->
+    <string name="add_my_course">Add my course</string>
+    <string name="course_title">Course Title</string>
+    <string name="complete_time">Achieving time (1-48 hours)</string>
+
+
+    <!-- 코스 공유 -->
+    <string name="share_my_course">Share my course</string>
+    <string name="explanation_my_course">Description of the course</string>
+
+    <string name="used_open_source">Used Open Source</string>
+    <string name="used_data_source">Using Data Source</string>
+    <string name="change_database_lang">Change Database Language</string>
+    <string name="no_facebook_login_info">No Facebook login information.</string>
+
+    <!-- MainActivity -->
+    <string name="check_network_status">Please check the network status.</string>
+    <string name="please_retry">Please try again.</string>
+
+    <string name="newest_database">The database is up to date.</string>
+    <string name="create_database">The database being created.</string>
+    <string name="update_database">Database Update</string>
+    <string name="downloading_database">Download database ...</string>
+    <string name="creating_database">Create database...</string>
+
+    <!-- 데이터베이스 언어 변경 -->
+    <string name="are_you_change_language">To change the database language, you must restart the application.\nDo you want to continue?</string>
+
+    <!-- menu -->
+    <string name="show_all_map">Show all map</string>
+
+
+    <!-- init page -->
+    <string name="init_introduce_attraction">Introduce Attraction</string>
+    <string name="init_my_course">Personalized Course</string>
+    <string name="init_share_course">Share Course</string>
+    <string name="init_favorite">Favorite Attraction</string>
+    <string name="init_course_game">Course Game</string>
+
+    <string name="init_intro_contents">You can easily find information\non attractions in Seoul.</string>
+    <string name="init_my_contents">Create your own course using\nthe attractions in Seoul.</string>
+    <string name="init_share_contents">You can share your own course,\nand you can see other people\'s course.</string>
+    <string name="init_favorite_contents">If you add attractions in Seoul to Favorites,\nyou can see at once through the map.</string>
+    <string name="init_game_contents">You can enjoy the course game through\nyour own course and other people\'s course.</string>
+
+    <string name="init_select_language">Please select\n your database language.</string>
+
+    <string name="init_start_no_login">Start with no login</string>
+
+
+
+    <string name="lipsum">Lorem ipsum dolor sit amet, ut duis lorem provident sed felis blandit, condimentum donec lectus ipsum et mauris, morbi porttitor interdum feugiat nulla donec sodales, vestibulum nisl primis a molestie vestibulum quam, sapien mauris metus risus suspendisse magnis. Augue viverra nulla faucibus egestas eu, a etiam id congue rutrum ante, arcu tincidunt donec quam felis at ornare, iaculis ligula sodales venenatis commodo volutpat neque, suspendisse elit praesent tellus felis mi amet. Inceptos amet tempor lectus lorem est non, ac donec ac libero neque mauris, tellus ante metus eget leo consequat. Scelerisque dolor curabitur pretium blandit ut feugiat, amet lacus pulvinar justo convallis ut, sed natoque ipsum urna posuere nibh eu. Sed at sed vulputate sit orci, facilisis a aliquam tellus quam aliquam, eu aliquam donec at molestie ante, pellentesque mauris lorem ultrices libero faucibus porta, imperdiet adipiscing sit hac diam ut nulla. Lacus enim elit pulvinar donec vehicula dapibus, accumsan purus officia cursus dolor sapien, eu amet dis mauris mi nulla ut. Non accusamus etiam pede non urna tempus, vestibulum aliquam tortor eget pharetra sodales, in vestibulum ut justo orci nulla, lobortis purus sem semper consectetuer magni purus. Dolor a leo vestibulum amet ut sit, arcu ut eaque urna fusce aliquet turpis, sed fermentum sed vestibulum nisl pede, tristique enim lorem posuere in laborum ut. Vestibulum id id justo leo nulla, magna lobortis ullamcorper et dignissim pellentesque, duis suspendisse quis id lorem ante. Vivamus a nullam ante adipiscing amet, mi vel consectetuer nunc aenean pede quisque, eget rhoncus dis porttitor habitant nunc vivamus, duis cubilia blandit non donec justo dictumst, praesent vitae nulla nam pulvinar urna. Adipiscing adipiscing justo urna pulvinar imperdiet nullam, vitae fusce rhoncus proin nonummy suscipit, ullamcorper amet et non potenti platea ultrices, mauris nullam sapien nunc justo vel, eu semper pellentesque arcu fusce augue. Malesuada mauris nibh sit a a scelerisque, velit sem lectus tellus convallis consectetuer, ultricies auctor a ante eros amet sed.\n\n
+Risus lacus duis leo platea wisi, felis maecenas rutrum in id in donec, non id a potenti libero eget, posuere elit ea sed pellentesque quis. Sunt lacus urna lorem elit duis, nibh donec purus quisque consectetuer dolor, neque vestibulum proin ornare eros nonummy phasellus. Iaculis cras eu at egestas dolor montes, viverra quisque malesuada consectetuer semper maecenas, a sed vitae donec tempor aliqua metus, ornare mollis suscipit et erat fusce, sit orci aut auctor elementum fames aliquam. Platea dui integer magnis non metus, minus dignissimos ante massa nostra et, rutrum sapien egestas quis sapien donec donec. Erat sit a eros aenean natoque, quam libero id lorem enim proin, lorem ipsum fermentum mattis metus et. Aliquam aliquet suscipit purus conubia at neque, platea vivamus vestibulum nulla quibusdam senectus, et morbi lectus malesuada gravida donec, elementum sit convallis pellentesque velit amet. Et eveniet viverra vehicula consectetuer justo, provident sed commodo non lacinia velit, tempor phasellus vel leo nisl cras, vivamus et arcu interdum dui eu amet. Volutpat wisi rhoncus vel turpis diam quibusdam, dapibus elit est quisque cubilia mauris, nulla elit magna tempor accumsan bibendum, lorem varius sed interdum eget mattis, scelerisque egestas feugiat donec dui molestie. Leo facilisis nisl sit montes ligula sed, enim commodo consectetuer nunc est et, ut sed vehicula dolor luctus elit. Fermentum cras donec eget nibh est vel, sed justo risus et pharetra diam, eu vivamus egestas ligula risus diam, sed justo eget hac ut mauris. Vestibulum diam nec vitae mi eget suspendisse, aenean arcu purus facilisis purus class in, id aliquam sit id scelerisque sapien etiam. Ut nullam sit sed at mauris lobortis, consequat dolor autem ipsum euismod nulla, elit quis proin eget conubia varius, erat arcu massa mus in mauris, scelerisque ut eu sollicitudin libero leo urna.\n\n
+Consectetuer luctus tempor elit ut dolor ligula, quis dui per dui hendrerit ante sagittis, in quisque pretium in eleifend enim. Condimentum iaculis vitae feugiat dis tellus vel, lectus dolor nec dui nulla nascetur, et pellentesque curabitur lorem leo velit eget. Id nascetur arcu lobortis suspendisse imperdiet urna, natoque nascetur ante in porta a, interdum hendrerit mi bibendum platea tellus, urna in enim ornare vestibulum faucibus enim. Leo fusce egestas ante nec volutpat, in tempor vel facilisis potenti ut, pede at non lorem a commodo, nulla dolor orci interdum vestibulum nulla. Dui nulla vestibulum quisque a pharetra porta, integer nec ipsum nec sed dui pharetra, magna et dignissim ipsum sed dictum, litora eros vivamus scelerisque libero ipsum. Sed ac ac lorem molestie adipiscing morbi, pellentesque imperdiet nunc quis morbi amet ante, libero dui ligula nec risus neque et, velit nonummy phasellus et facilisi amet, ligula in elementum non sapien pulvinar faucibus. Eu leo ut posuere sed aliquet, tincidunt vel urna volutpat tempus sem, sit felis aliquet vestibulum condimentum sit, amet nibh vel tellus purus ullamcorper libero, nulla vestibulum pede ut vestibulum pretium. Eu nulla vestibulum a neque in metus, quisquam nam sed cursus eget luctus, pede ultrices nec sed dignissim pellentesque, sit class cursus metus nulla placerat mauris, consequat mollis neque vivamus amet pede. Mauris dolor nulla diam eros bibendum, quam ante vestibulum morbi non ligula vel, molestie curabitur rhoncus nulla euismod interdum non. Nulla fringilla lorem mollis ad massa, sit molestie nibh lorem arcu volutpat, accumsan commodo lectus eu et donec, sit tempor tempus rutrum in curabitur amet. Nec urna euismod a tincidunt commodo, eu pede turpis libero vitae viverra, ante vestibulum nam non habitasse potenti, mauris imperdiet in in nunc convallis. Et nostra wisi in est accumsan vehicula, quisque vitae felis mauris sed vulputate nec, ante imperdiet sollicitudin massa iaculis massa sit.\n\n
+Quam libero nulla netus eu porta curae, ut nulla bibendum facilisis et urna sed, quis congue vestibulum aliquam interdum etiam. Nulla vel lobortis ullamcorper vitae excepturi, neque urna feugiat lectus vel lacinia, massa pretium orci eu metus neque vulputate. Imperdiet ac velit rhoncus nulla malesuada nullam, nec pulvinar justo gravida lorem rutrum magna, habitasse repudiandae mi eros vestibulum ante, nec euismod dui iaculis in turpis pretium, ac id metus egestas proin lacus lectus. Laoreet lorem nec vitae risus erat arcu, vitae quam ut in ante tristique, porta dolor pede quam et odio nam, arcu lacus sem congue ante cursus massa. Et mattis sagittis erat accumsan fusce quam, vehicula ligula beatae natoque fusce sodales conubia, habitasse metus cum magnis viverra nam cursus, egestas urna wisi primis blandit eu magna, eget libero elit lacus lorem dis aliquam. Ut mauris ante natoque lacus massa, justo a lectus sodales enim adipiscing id, accumsan ut ipsum vestibulum sed enim auctor, vitae congue tincidunt id phasellus lacinia scelerisque, tincidunt sapien nulla euismod volutpat iaculis. Platea sociis nec aliquet nec molestie, in mi et augue sapien in vivamus, integer fames proin vitae in ullamcorper et. Fringilla etiam sapiente rhoncus suspendisse nec id, lobortis cras eget egestas dui ac nec, justo lacus ut lorem bibendum quia eros, eget a gravida id donec nunc suscipit, porta sed in sodales non rutrum. Lectus vel dui elementum pellentesque magna aliquam, vitae non sit pede et fusce nibh, id id deserunt ornare dui sit condimentum, in adipiscing imperdiet turpis nam aliquet, facilisis metus magna lacus wisi facilisis tortor. Vulputate elit accumsan quam amet ligula, suspendisse lacus mi nonummy integer urna, libero nulla nunc varius in odio, laoreet nulla amet placerat amet nec. Consectetuer vel massa hendrerit vitae iaculis id, sed ut ut laudantium odio in, elit vestibulum duis ante maecenas interdum in, neque vehicula ultrices varius in quam, pede tellus pellentesque sed nullam quis.</string>
+    <string name="mit_license">Copyright (c) [year] [name of copyright owner]\n
+\n
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following\n
+conditions:\n
+\n
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+\n
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+</string>
+    <string name="apache2.0_license">"http://www.apache.org/licenses/\n
+\n
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n
+\n
+1. Definitions.\n
+\n
+"License" shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.\n
+\n
+"Licensor" shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.\n
+\n
+"Legal Entity" shall mean the union of the acting entity and all other entities that control, are controlled by, or are under common control with that entity. For the purposes of this definition, "control" means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.\n
+\n
+"You" (or "Your") shall mean an individual or Legal Entity exercising permissions granted by this License.\n
+\n
+"Source" form shall mean the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.\n
+\n
+"Object" form shall mean any form resulting from mechanical transformation or translation of a Source form, including but not limited to compiled object code, generated documentation, and conversions to other media types.\n
+\n
+"Work" shall mean the work of authorship, whether in Source or Object form, made available under the License, as indicated by a copyright notice that is included in or attached to the work (an example is provided in the Appendix below).\n
+\n
+"Derivative Works" shall mean any work, whether in Source or Object form, that is based on (or derived from) the Work and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship. For the purposes of this License, Derivative Works shall not include works that remain separable from, or merely link (or bind by name) to the interfaces of, the Work and Derivative Works thereof.
+\n
+"Contribution" shall mean any work of authorship, including the original version of the Work and any modifications or additions to that Work or Derivative Works thereof, that is intentionally submitted to Licensor for inclusion in the Work by the copyright owner or by an individual or Legal Entity authorized to submit on behalf of the copyright owner. For the purposes of this definition, "submitted" means any form of electronic, verbal, or written communication sent to the Licensor or its representatives, including but not limited to communication on electronic mailing lists, source code control systems, and issue tracking systems that are managed by, or on behalf of, the Licensor for the purpose of discussing and improving the Work, but excluding communication that is conspicuously marked or otherwise designated in writing by the copyright owner as "Not a Contribution."\n
+\n
+"Contributor" shall mean Licensor and any individual or Legal Entity on behalf of whom a Contribution has been received by Licensor and subsequently incorporated within the Work.\n
+\n
+2. Grant of Copyright License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form.\n
+\n
+3. Grant of Patent License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Work, where such license applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s) with the Work to which such Contribution(s) was submitted. If You institute patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License for that Work shall terminate as of the date such litigation is filed.\n
+\n
+4. Redistribution. You may reproduce and distribute copies of the Work or Derivative Works thereof in any medium, with or without modifications, and in Source or Object form, provided that You meet the following conditions:\n
+\n
+You must give any other recipients of the Work or Derivative Works a copy of this License; and
+You must cause any modified files to carry prominent notices stating that You changed the files; and
+You must retain, in the Source form of any Derivative Works that You distribute, all copyright, patent, trademark, and attribution notices from the Source form of the Work, excluding those notices that do not pertain to any part of the Derivative Works; and
+If the Work includes a "NOTICE" text file as part of its distribution, then any Derivative Works that You distribute must include a readable copy of the attribution notices contained within such NOTICE file, excluding those notices that do not pertain to any part of the Derivative Works, in at least one of the following places: within a NOTICE text file distributed as part of the Derivative Works; within the Source form or documentation, if provided along with the Derivative Works; or, within a display generated by the Derivative Works, if and wherever such third-party notices normally appear. The contents of the NOTICE file are for informational purposes only and do not modify the License. You may add Your own attribution notices within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work, provided that such additional attribution notices cannot be construed as modifying the License.\n
+\n
+You may add Your own copyright statement to Your modifications and may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Derivative Works as a whole, provided Your use, reproduction, and distribution of the Work otherwise complies with the conditions stated in this License.\n
+5. Submission of Contributions. Unless You explicitly state otherwise, any Contribution intentionally submitted for inclusion in the Work by You to the Licensor shall be under the terms and conditions of this License, without any additional terms or conditions. Notwithstanding the above, nothing herein shall supersede or modify the terms of any separate license agreement you may have executed with Licensor regarding such Contributions.\n
+\n
+6. Trademarks. This License does not grant permission to use the trade names, trademarks, service marks, or product names of the Licensor, except as required for reasonable and customary use in describing the origin of the Work and reproducing the content of the NOTICE file.\n
+\n
+7. Disclaimer of Warranty. Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.\n
+\n
+8. Limitation of Liability. In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, unless required by applicable law (such as deliberate and grossly negligent acts) or agreed to in writing, shall any Contributor be liable to You for damages, including any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or out of the use or inability to use the Work (including but not limited to damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses), even if such Contributor has been advised of the possibility of such damages.\n
+\n
+9. Accepting Warranty or Additional Liability. While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability.\n
+\n
+END OF TERMS AND CONDITIONS\n
+\n
+APPENDIX: HOW TO APPLY THE APACHE LICENSE TO YOUR WORK\n
+To apply the Apache License to your work, attach the following boilerplate notice, with the fields enclosed by brackets "[]" replaced with your own identifying information. (Don't include the brackets!) The text should be enclosed in the appropriate comment syntax for the file format. We also recommend that a file or class name and description of purpose be included on the same "printed page" as the copyright notice for easier identification within third-party archives.\n
+\n
+Copyright [yyyy] [name of copyright owner]\n
+\n
+Licensed under the Apache License, Version 2.0 (the "License");\n
+you may not use this file except in compliance with the License.\n
+You may obtain a copy of the License at\n
+\n
+    http://www.apache.org/licenses/LICENSE-2.0\n
+\n
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n
+See the License for the specific language governing permissions and
+limitations under the License."</string>
+
+    <string name="facebook_app_id">741374922667707</string>
+
+</resources>

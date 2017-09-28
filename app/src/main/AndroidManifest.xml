@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tk.twpooi.seoultrip"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="23"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:name=".StartActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Contents"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="tk.twpooi.seoultrip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainTabActivity"
+            android:label="Contents"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="tk.twpooi.seoultrip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".fragment.detailattraction.DetailActivity"
+            android:label="Contents"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="tk.twpooi.seoultrip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".fragment.AddMyCourseActivity"
+            android:label="Contents"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="tk.twpooi.seoultrip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".fragment.ShowCourseListActivity"
+            android:label="Contents"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="tk.twpooi.seoultrip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".fragment.AddCourseListActivity"
+            android:label="Contents"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="tk.twpooi.seoultrip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".OSSActivity"
+            android:label="Contents"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="tk.twpooi.seoultrip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".fragment.ShareMyCourseActivity"
+            android:label="Contents"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="tk.twpooi.seoultrip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".fragment.showsharecourse.ShowShareCourseActivity"
+            android:label="Contents"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="tk.twpooi.seoultrip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".fragment.addcoursegame.AddCourseGameMainActivity"
+            android:label="Contents"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="tk.twpooi.seoultrip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".fragment.addcoursegame.AddCourseGameActivity"
+            android:label="Contents"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="tk.twpooi.seoultrip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".fragment.DetailCourseGameActivity"
+            android:label="Contents"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="tk.twpooi.seoultrip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".fragment.search.SearchAttractionListActivity"
+            android:label="Contents"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="tk.twpooi.seoultrip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".fragment.search.SearchCourseGameListActivity"
+            android:label="Contents"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="tk.twpooi.seoultrip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".fragment.ShowMapActivity"
+            android:label="Contents"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="tk.twpooi.seoultrip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".fragment.detailattraction.SimilarAttractionActivity"
+            android:label="Contents"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="tk.twpooi.seoultrip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".fragment.ShowImageActivity"
+            android:label="Contents"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="tk.twpooi.seoultrip" />
+            </intent-filter>
+        </activity>
+
+        <!-- Facebook Activity -->
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name"
+            tools:replace="android:theme"
+            />
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider741374922667707"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+
+    </application>
+
+</manifest>

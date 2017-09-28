@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:id="@+id/root"
+    >
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/show_daum"
+            >
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/show_daum"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/kakao_yellow"
+            android:text="@string/show_kakao_map"
+            android:textColor="@color/kakao_text"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
